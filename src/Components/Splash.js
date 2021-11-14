@@ -1,8 +1,18 @@
 
 import './Splash.css';
 import SplashImage from '../Images/marketing-1.jpg';
+import Arrow from '../Images/arrow.png';
 
 function Splash() {
+
+    function toNextSection() {
+        const amount = window.outerHeight - 240;
+        window.scrollBy({
+            top: amount,
+            left: 0,
+            behavior: "smooth"
+        });
+    }
 
     return (
         <div className="splash">
@@ -10,7 +20,10 @@ function Splash() {
                 <div className="underline-effect">
                     <h1>Made to <br/>Order</h1>
                     <hr/>
-                    <p>Our baristas are happy to take your order exactly how you like!</p>
+                    <p>Have a special request? Our baristas can make it happen!</p>
+                    <button onClick={toNextSection} className="next-section-button">
+                        <img src={Arrow} ></img>
+                    </button>
                 </div>
                 
             </div>

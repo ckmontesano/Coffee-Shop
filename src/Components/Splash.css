@@ -1,7 +1,8 @@
 .splash {
+    position: relative;
+    overflow: hidden;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
 }
 .content, .image {
     position: absolute;
@@ -9,7 +10,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 .content {
     z-index: 998;
@@ -21,6 +21,7 @@
 }
 .content > .underline-effect > h1 {
     margin: 0;
+    font-family: inherit;
     font-size: 120px;
     line-height: 85%;
     color: var(--white);
@@ -45,4 +46,20 @@
     width: 100%;
     user-select: none;
     filter: contrast(90%), brightness(50%);
+}
+
+.next-section-button {
+    width: 60px;
+    height: 60px;
+    background-color: var(--brand);
+    border: none; outline: none;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0 0 5px .5px #2e2e2e;
+}
+.next-section-button:hover {
+    opacity: 1;
+}
+.next-section-button > img { /* right arrow image */
+    transform: rotate(90deg);
 }

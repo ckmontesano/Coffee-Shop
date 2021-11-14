@@ -1,54 +1,66 @@
 
 import { React, useState } from 'react';
+import { Link, useLocation } from "react-router-dom";
 
 import './NavigationBar.css';
 
-function NavigationBar() {
+function NavigationBar( props ) {
 
-    const [navBarState, changeNavBarState] = useState('not-scrolled');
+    // set initial state
+    if ( props.dynamic ) {
+        var initialState = "not-scrolled";
+    }
+    else {
+        var initialState = "scrolled";
+    }
 
+    console.log(initialState);
+
+    const [navBarState, changeNavBarState] = useState({initialState});
+    
     window.addEventListener("scroll", () => {
-        const offset = window.pageYOffset;
-        
-        if ( offset > 80 ) {
-            changeNavBarState('scrolled');
-        }
-        
-        if ( offset < 40 ) {
-            changeNavBarState('not-scrolled');
+        if ( props.dynamic ) {
+            const offset = window.pageYOffset;
+    
+            if ( offset > 80 ) {
+                changeNavBarState('scrolled');
+            }
+            
+            if ( offset < 40 ) {
+                changeNavBarState('not-scrolled');
+            }
         }
     });
 
     return (
         <div id="navigation-bar" className={navBarState}>
             <div className="content">
-                <div className="brand-container">
+                <Link to="/" className="brand-container">
                     <text className="brand">
                         Brand
                     </text>
                     <text className="outline">
                         Coffee
                     </text>
-                </div>
+                </Link>
                 <ul className="links">
                     <li>
-                        <a>
+                        <Link to="/menu">
                             Menu
                             <hr/>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a>
+                        <Link to="/locations">
                             Locations
                             <hr/>
-                        </a>
-                        
+                        </Link>
                     </li>
                     <li>
-                        <a>
+                        <Link to="/our-story">
                             Our Story
                             <hr/>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>

@@ -1,14 +1,31 @@
 
-import NavigationBar from "./Components/NavigationBar";
-import Splash from './Components/Splash';
+import { React, useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useHistory
+} from "react-router-dom";
+
+
+import Homepage from './Components/Homepage';
+import Locations from './Components/Locations';
+import Footer from './Components/Footer';
 import './App.css';
 
 function App() {
+
   return (
     <div className="App">
-      <NavigationBar/>
-      <Splash/>
-      <h1>Hello, World!</h1>
+      <Router>
+        <Routes>
+          <Route path="/locations" element={<Locations/>} />
+          <Route path="/" element={<Homepage/>} />
+        </Routes>
+
+        <Footer/>
+      </Router>
     </div>
   );
 }

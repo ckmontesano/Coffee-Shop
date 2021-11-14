@@ -44,7 +44,7 @@
 }
 .content > .links a {
     font-size: 22px;
-    cursor: pointer;
+    color: var(--white);
 }
 .content > .links a hr {
     border: none; outline: none;
@@ -64,5 +64,5 @@
     transition: .5s opacity;
 }
 #navigation-bar.scrolled .background {
-    opacity: .8;
+    opacity: 1;
 }
