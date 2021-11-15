@@ -2,6 +2,7 @@
 
   /* define colors that work across the entire application */
   --brand: #C87E75;
+  --light-brand: #C27876;
   --white: #fff;
   --eggshell: #D6D6D6;
   --secondary-white: #bdbdbd;
@@ -36,4 +37,8 @@ h1 {
 a {
   text-decoration: none;
   color: var(--brand);
+}
+
+cursive {
+  font-family: Zapfino;
 }

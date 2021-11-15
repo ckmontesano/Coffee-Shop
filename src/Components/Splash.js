@@ -18,7 +18,10 @@ function Splash() {
         <div className="splash">
             <div className="content">
                 <div className="underline-effect">
-                    <h1>Made to <br/>Order</h1>
+                    <h1>
+                        Made to <br/>
+                        <cursive>Order</cursive>
+                    </h1>
                     <hr/>
                     <p>Have a special request? Our baristas can make it happen!</p>
                     <button onClick={toNextSection} className="next-section-button">

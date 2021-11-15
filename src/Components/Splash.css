@@ -18,12 +18,14 @@
 .content > .underline-effect {
     margin-top: 15%;
     margin-left: 10%;
+    text-align: left;
+    width: 700px;
 }
 .content > .underline-effect > h1 {
     margin: 0;
-    font-family: inherit;
-    font-size: 120px;
-    line-height: 85%;
+    font-family: Zapfino;
+    font-size: 100px;
+    line-height: 150%;
     color: var(--white);
     text-shadow: 0 0 4px #2e2e2e;
 }
@@ -32,8 +34,8 @@
     margin-top: -50px;
     margin-left: -10px;
     border: none; outline: none;
-    height: 35px;
-    background: var(--brand);
+    height: 25px;
+    background: linear-gradient(var(--light-brand), var(--brand));
     width: 350px;
     box-shadow: 0 0 5px .5px #2e2e2e;
 }
