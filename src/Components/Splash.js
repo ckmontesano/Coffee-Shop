@@ -18,8 +18,8 @@ function Splash() {
         <div className="splash">
             <div className="content">
                 <div className="underline-effect">
-                    <h1>
-                        Made to Order
+                    <h1 className="header">
+                        <cursive>Made to Order</cursive>
                     </h1>
                     <hr/>
                     <p>Have a special request? Our baristas can make it happen!</p>

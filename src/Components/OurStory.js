@@ -1,13 +1,13 @@
 
-function Locations() {
+function OurStory() {
 
     return (
         <div>
             <div className="offset-for-navbar">
-                <h1>~ Locations ~</h1>
+                <h1>~ Our Story ~</h1>
             </div>
         </div>
     );
 }
 
-export default Locations;
+export default OurStory;
