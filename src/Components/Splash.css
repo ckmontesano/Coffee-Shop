@@ -26,7 +26,7 @@
     font-size: 95px;
     line-height: 150%;
     color: var(--white);
-    text-shadow: 0 0 4px #2e2e2e;
+    text-shadow: 0 0 4px var(--primary-black);
 }
 .content > .underline-effect > hr {
     border: none;
@@ -37,12 +37,12 @@
     height: 18px;
     width: calc(100% + 40px);
     background: linear-gradient(var(--light-brand), var(--brand));
-    box-shadow: 0 0 5px .5px #2e2e2e;
+    box-shadow: 0 0 5px .5px var(--primary-black);
 }
 .content > .underline-effect > p {
     margin-top: 35px;
     font-size: 30px;
-    text-shadow: 0 0 4px #2e2e2e;
+    text-shadow: 0 0 4px var(--primary-black);
 }
 .image img {
     width: 100%;
@@ -50,6 +50,7 @@
     filter: brightness(80%);
 }
 
+/* next section button */
 .next-section-button {
     position: absolute;
     margin: 0 auto;
@@ -61,6 +62,7 @@
     background-color: var(--brand);
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
+    box-shadow: 0 0 5px 1px var(--primary-black);
     opacity: .8;
     transition: .5s opacity;
     cursor: pointer;
@@ -68,7 +70,6 @@
 .next-section-button:hover {
     opacity: 1;
 }
-
 /* down arrow */
 .next-section-button > img {
     transform: rotate(90deg);
