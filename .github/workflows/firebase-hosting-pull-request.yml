@@ -13,5 +13,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BAKERY_15CCC }}'
-          projectId: bakery-15ccc
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_COFFEE_SHOP_C34A1 }}'
+          projectId: coffee-shop-c34a1

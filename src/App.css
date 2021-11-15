@@ -24,6 +24,8 @@
 
   /* default font */
   font-family: Helvetica;
+
+  text-align: center;
 }
 
 /* use this for all pages not Homepage */

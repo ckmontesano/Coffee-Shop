@@ -1,14 +1,14 @@
 
-function Locations() {
+function Menu() {
 
     return (
         <div>
             <div className="offset-for-navbar">
-                <h1>~ Locations ~</h1>
+                <h1>~ Menu ~</h1>
             </div>
             
         </div>
     );
 }
 
-export default Locations;
+export default Menu;

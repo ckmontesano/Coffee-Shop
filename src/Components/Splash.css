@@ -28,6 +28,7 @@
     line-height: 150%;
     color: var(--white);
     text-shadow: 0 0 4px #2e2e2e;
+    text-align: left;
 }
 .content > .underline-effect > hr {
     margin: 0;
@@ -47,7 +48,7 @@
 .image img {
     width: 100%;
     user-select: none;
-    filter: contrast(80%), brightness(50%);
+    filter: brightness(80%);
 }
 
 .next-section-button {
@@ -62,10 +63,11 @@
     margin: 0 auto;
     text-align: center;
     opacity: .8;
-    transition: .5s opacity;
+    transition: .5s opacity, .5s transform;
 }
 .next-section-button:hover {
     opacity: 1;
+    transform: scale(1.1);
 }
 .next-section-button > img { /* right arrow image */
     display: block;
