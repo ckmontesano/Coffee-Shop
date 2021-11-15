@@ -31,12 +31,12 @@
 }
 .content > .underline-effect > hr {
     margin: 0;
-    margin-top: -50px;
+    margin-top: -100px;
     margin-left: -10px;
     border: none; outline: none;
     height: 25px;
     background: linear-gradient(var(--light-brand), var(--brand));
-    width: 350px;
+    width: 450px;
     box-shadow: 0 0 5px .5px #2e2e2e;
 }
 .content > .underline-effect > p {
@@ -47,21 +47,30 @@
 .image img {
     width: 100%;
     user-select: none;
-    filter: contrast(90%), brightness(50%);
+    filter: contrast(80%), brightness(50%);
 }
 
 .next-section-button {
+    display: flex;
     width: 60px;
     height: 60px;
-    background-color: var(--brand);
+    background: radial-gradient(var(--brand), var(--light-brand));
     border: none; outline: none;
     border-radius: 100%;
     cursor: pointer;
     box-shadow: 0 0 5px .5px #2e2e2e;
+    margin: 0 auto;
+    text-align: center;
+    opacity: .8;
+    transition: .5s opacity;
 }
 .next-section-button:hover {
     opacity: 1;
 }
 .next-section-button > img { /* right arrow image */
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin: auto;
     transform: rotate(90deg);
 }

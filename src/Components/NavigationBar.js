@@ -5,18 +5,16 @@ import { Link, useLocation } from "react-router-dom";
 import './NavigationBar.css';
 
 function NavigationBar( props ) {
-
     // set initial state
     if ( props.dynamic ) {
         var initialState = "not-scrolled";
     }
     else {
-        var initialState = "scrolled";
+        // navBar is static
+        var initialState = "static";
     }
 
-    console.log(initialState);
-
-    const [navBarState, changeNavBarState] = useState({initialState});
+    const [navBarState, changeNavBarState] = useState(initialState);
     
     window.addEventListener("scroll", () => {
         if ( props.dynamic ) {
@@ -36,12 +34,8 @@ function NavigationBar( props ) {
         <div id="navigation-bar" className={navBarState}>
             <div className="content">
                 <Link to="/" className="brand-container">
-                    <text className="brand">
-                        Brand
-                    </text>
-                    <text className="outline">
-                        Coffee
-                    </text>
+                    <text className="brand">Brand</text>
+                    <text>Coffee</text>
                 </Link>
                 <ul className="links">
                     <li>

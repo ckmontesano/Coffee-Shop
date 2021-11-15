@@ -7,6 +7,19 @@
     transition: .5s background;
 }
 
+
+.background {
+    background: var(--primary-black);
+    opacity: 0;
+    transition: .5s opacity;
+}
+#navigation-bar.scrolled .background {
+    opacity: 1;
+}
+#navigation-bar.static .background {
+    opacity: 1;
+}
+
 .content, .background {
     width: calc(100% - 60px);
     height: calc(100% - 60px);
@@ -19,12 +32,7 @@
     font-size: 50px;
     font-family: cursive;
     font-weight: bolder;
-}
-.content > .brand-container > .outline {
-    color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--white);
-
+    color: var(--white);
 }
 
 .content > .links {
@@ -57,13 +65,4 @@
 }
 .content > .links a:hover hr {
     width: 100%;
-}
-
-.background {
-    background: #000;
-    opacity: 0;
-    transition: .5s opacity;
-}
-#navigation-bar.scrolled .background {
-    opacity: 1;
 }

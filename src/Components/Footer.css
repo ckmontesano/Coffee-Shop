@@ -1,0 +1,14 @@
+
+#footer {
+    background-color: var(--secondary-white);
+    width: 80%;
+    margin: 50px auto;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+#footer text {
+    display: block;
+    font-weight: lighter;
+    color: #2e2e2e;
+}

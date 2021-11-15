@@ -2,10 +2,12 @@
 
   /* define colors that work across the entire application */
   --brand: #C87E75;
-  --light-brand: #C27876;
+  --light-brand: #e19b98;
   --white: #fff;
   --eggshell: #D6D6D6;
   --secondary-white: #bdbdbd;
+  --primary-black: #1C1C1C;
+  --secondary-black: #585858;
   /* */
 
   background-color: var(--eggshell);
@@ -24,14 +26,25 @@
   font-family: Helvetica;
 }
 
+/* use this for all pages not Homepage */
+.offset-for-navbar {
+  padding-top: 140px;
+  width: 100%;
+}
+
 .brand {
   color: var(--brand);
+  background: linear-gradient(to bottom, var(--light-brand), var(--brand));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h1 {
-  margin: 0;
   font-size: 55px;
   font-family:'Times New Roman', Times, serif;
+  font-weight: lighter;
+  text-align: center;
+  color: var(--primary-black);
 }
 
 a {

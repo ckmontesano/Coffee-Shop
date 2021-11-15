@@ -7,7 +7,10 @@ function Locations() {
     return (
         <div>
             <NavigationBar dynamic={false}/>
-            <h1>Locations</h1>
+            <div className="offset-for-navbar">
+                <h1>~ Locations ~</h1>
+            </div>
+            
         </div>
     );
 }

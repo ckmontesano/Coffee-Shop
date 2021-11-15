@@ -24,9 +24,9 @@ function Splash() {
                     </h1>
                     <hr/>
                     <p>Have a special request? Our baristas can make it happen!</p>
-                    <button onClick={toNextSection} className="next-section-button">
-                        <img src={Arrow} ></img>
-                    </button>
+                </div>
+                <div onClick={toNextSection} className="next-section-button">
+                    <img src={Arrow} ></img>
                 </div>
                 
             </div>
