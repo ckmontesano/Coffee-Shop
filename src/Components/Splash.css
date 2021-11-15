@@ -19,12 +19,11 @@
     margin-top: 15%;
     margin-left: 10%;
     text-align: left;
-    width: 700px;
 }
 .content > .underline-effect > h1 {
     margin: 0;
     font-family: Zapfino;
-    font-size: 100px;
+    font-size: 95px;
     line-height: 150%;
     color: var(--white);
     text-shadow: 0 0 4px #2e2e2e;
@@ -52,27 +51,24 @@
 }
 
 .next-section-button {
-    display: flex;
-    width: 60px;
-    height: 60px;
-    background: radial-gradient(var(--brand), var(--light-brand));
-    border: none; outline: none;
-    border-radius: 100%;
-    cursor: pointer;
-    box-shadow: 0 0 5px .5px #2e2e2e;
+    width: 900px;
+    height: 500px;
+    background-color: var(--brand);
     margin: 0 auto;
-    text-align: center;
+    margin-top: 150px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
     opacity: .8;
-    transition: .5s opacity, .5s transform;
+    transition: .5s opacity;
+    cursor: pointer;
 }
 .next-section-button:hover {
     opacity: 1;
-    transform: scale(1.1);
 }
-.next-section-button > img { /* right arrow image */
-    display: block;
-    width: 50%;
-    height: 50%;
-    margin: auto;
+
+/* down arrow */
+.next-section-button > img {
     transform: rotate(90deg);
+    width: 30px;
+    margin-top: 20px;
 }

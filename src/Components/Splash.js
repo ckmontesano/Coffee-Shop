@@ -6,7 +6,7 @@ import Arrow from '../Images/arrow.png';
 function Splash() {
 
     function toNextSection() {
-        const amount = window.outerHeight - 240;
+        const amount = window.innerHeight - 100;
         window.scrollBy({
             top: amount,
             left: 0,
@@ -19,8 +19,7 @@ function Splash() {
             <div className="content">
                 <div className="underline-effect">
                     <h1>
-                        Made to <br/>
-                        <cursive>Order</cursive>
+                        Made to Order
                     </h1>
                     <hr/>
                     <p>Have a special request? Our baristas can make it happen!</p>
