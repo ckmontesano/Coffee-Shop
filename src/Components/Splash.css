@@ -44,10 +44,13 @@
     font-size: 30px;
     text-shadow: 0 0 4px var(--primary-black);
 }
+.image {
+    background-color: var(--primary-black);
+}
 .image img {
     width: 100%;
     user-select: none;
-    filter: brightness(80%);
+    filter: brightness(80%) contrast(85%);
 }
 
 /* next section button */

@@ -9,24 +9,36 @@ function StoreLocationNode(props) {
     // note: this node allows for a photo prop
     //       however I am not currently using it.
 
-    var callLink = 'tel:' + props.phone;
+    const callLink = 'tel:' + props.phone;
+
+    const idName = 'node' + props.id;
+
+    var hours = "24 Hours";
+
+    // reset hours if not 24 hours
+    if ( props.open != "" ) {
+        hours = props.open + "-" + props.close;
+    }
+
+    console.log(hours);
 
     return (
-        <div className="node">
-            <text class="address">{props.address}</text>
-            <text class="location">{props.location}</text>
-            <div class="photo">
-                <img src={props.photo} />
+        <div className="node" id={idName}>
+            <div className="photo">
+                <img src={props.photo} draggable="false" />
             </div>
-            <div class="inline-info">
-                <img src={phoneIcon} />
+            <hr />
+            <text className="address">{props.address}</text>
+            <text className="location">{props.location}</text>
+            <div className="inline-info">
+                <img src={phoneIcon}  draggable="false" />
                 <a href={callLink}>
-                    <text class="phone">{props.phone}</text>
+                    <text className="phone">{props.phone}</text>
                 </a>
             </div>
-            <div class="inline-info">
-                <img src={clockIcon} />
-                <text class="hours">{props.open} - {props.close}</text>
+            <div className="inline-info">
+                <img src={clockIcon} draggable="false" />
+                <text className="hours">{hours}</text>
             </div>
             
             

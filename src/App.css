@@ -50,6 +50,14 @@ h1 {
   color: var(--primary-black);
 }
 
+/* to be used exclusively as a subtitle to h1 */
+h2 {
+  font-size: 25px;
+  font-weight: lighter;
+  color: var(--secondary-black);
+  margin-top: -35px;
+}
+
 a {
   text-decoration: none;
   color: var(--brand);

@@ -6,7 +6,6 @@ function Menu() {
             <div className="offset-for-navbar">
                 <h1>~ Menu ~</h1>
             </div>
-            
         </div>
     );
 }

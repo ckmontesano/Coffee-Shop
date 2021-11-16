@@ -1,6 +1,6 @@
 
 import './Splash.css';
-import SplashImage from '../Images/marketing-1.jpg';
+import SplashImage from '../Images/splash.jpg';
 import Arrow from '../Images/arrow.png';
 
 function Splash() {
@@ -30,7 +30,7 @@ function Splash() {
                 
             </div>
             <div className="image">
-                <img src={SplashImage}/>
+                <img src={SplashImage} />
             </div>
             
         </div>
