@@ -26,6 +26,7 @@
   font-family: Helvetica;
 
   text-align: center;
+  color: var(--primary-black);
 }
 
 /* use this for all pages not Homepage */
@@ -52,6 +53,9 @@ h1 {
 a {
   text-decoration: none;
   color: var(--brand);
+}
+a:hover {
+  text-decoration: underline;
 }
 
 cursive {

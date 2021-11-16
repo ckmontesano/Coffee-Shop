@@ -8,6 +8,12 @@
     box-shadow: 0 0 5px 1px #000;
 }
 
+/* override universal project link styling */
+#navigation-bar a:hover {
+    text-decoration: none;
+}
+/**/
+
 .brand-name {
     margin: 0 auto;
     margin-right: 50px;

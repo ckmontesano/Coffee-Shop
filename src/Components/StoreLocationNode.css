@@ -1,0 +1,61 @@
+
+.node {
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+    padding: 30px;
+    /*
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px var(--secondary-white);
+    border: solid 3px var(--eggshell);
+    background-color: var(--white);
+    */
+    box-shadow: 0 0 5px 5px var(--secondary-white);
+    border-radius: 20px;
+}
+
+.node > text {
+    display: block;
+    color: var(--secondary-black);
+}
+.node > .photo {
+    display: block;
+    margin: 15px auto;
+    width: 150px;
+    height: 150px;
+    border: solid 5px var(--brand);
+    border-radius: 100%;
+    box-shadow: 0 0 5px 5px var(--secondary-white);
+    overflow: hidden;
+    user-select: none;
+}
+.node > .photo > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+/* text */
+.node > text.address {
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--primary-black);
+}
+.node > text.location {
+    font-size: 20px;
+    font-style: italic;
+}
+.node text.phone {
+    color: var(--primary-black);
+}
+
+/* contact info divs */
+.node > div.inline-info {
+    display: inline-block;
+    padding: 8px;
+}
+.node > div.inline-info > img {
+    display: block;
+    width: 36px;
+    margin: 15px auto;
+}
