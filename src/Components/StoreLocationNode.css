@@ -23,16 +23,16 @@
     width: calc(100% + 30px);
     height: 150px;
     overflow: hidden;
-    box-shadow: 0 0 60px red inset;
+    background-color: var(--secondary-white);
+}
+.node > .photo > img {
+    width: 100%;
 }
 .node > hr {
     width: calc(100% + 30px);
     margin: 0 0 30px -15px;
     height: 6px;
     background: linear-gradient(to right, var(--brand), var(--light-brand), var(--brand));
-}
-.node > .photo > img {
-    width: 100%;
 }
 /**/
 

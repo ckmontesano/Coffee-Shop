@@ -10,8 +10,9 @@
   --secondary-black: #585858;
   /* */
 
+  /* appearance */
+  min-height: 100vh;
   background-color: var(--eggshell);
-  min-height: 200vh;
 
   /* avoid application going off the side of screen */
   position: relative;
@@ -22,9 +23,8 @@
   /* smooth scroll */
   scroll-behavior: smooth;
 
-  /* default font */
+  /* default text */
   font-family: Helvetica;
-
   text-align: center;
   color: var(--primary-black);
 }
