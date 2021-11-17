@@ -7,10 +7,13 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "firebase": "^9.4.1",
+    "npm-check-updates": "^12.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router": "^6.0.2",
     "react-router-dom": "^6.0.2",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^3.4.4",
+    "serve": "^13.0.2",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -36,5 +39,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckmontesano/Coffee-Shop.git"
+  },
+  "author": "Cameron Montesano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ckmontesano/Coffee-Shop/issues"
+  },
+  "homepage": "https://github.com/ckmontesano/Coffee-Shop#readme"
 }
