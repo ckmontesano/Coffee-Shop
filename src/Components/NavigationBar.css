@@ -3,9 +3,10 @@
     z-index: 999;
     padding: 20px;
     width: calc(100% - 40px);
-    color: var(--white);
     background-color: var(--primary-black);
     box-shadow: 0 0 5px 1px #000;
+    color: var(--white);
+    transition: 1s;
 }
 
 /* override universal project link styling */
@@ -16,37 +17,130 @@
 
 .brand-name {
     margin: 0 auto;
-    margin-right: 50px;
-    font-size: 50px;
     font-family: cursive;
     font-weight: bolder;
     color: var(--white);
 }
-
 .links {
-    display: inline-block;
     margin: 0;
     padding: 0;
     list-style: none;
     transition: .5s opacity;
 }
-.links li {
-    display: inline-block;
-    margin: 0px 10px;
+.links > li {
     text-align: center;
 }
-.links a {
-    font-size: 22px;
+.links > li > a {
     color: var(--white);
 }
-.links a hr {
-    border: none; outline: none;
-    height: 4px;
-    width: 0;
-    margin: 0 auto;
-    background-color: var(--brand);
-    transition: 1s;
+
+
+/* mobile */
+@media (max-width: 900px) {
+    #navigation-bar {
+        overflow: hidden;
+    }
+    #navigation-bar.collapsed {
+        height: 60px;
+    }
+    #navigation-bar.expanded {
+        height: 100%;
+    }
+    .brand-name {
+        display: block;
+        font-size: 35px;
+    }
+    #expand-collapse-button {
+        float: right;
+        margin-top: -35px;
+        width: 15px;
+        height: 15px;
+        border: solid 2px var(--brand);
+        background-color: var(--brand);
+        border-radius: 100%;
+        transition: .2s background;
+        animation: slideInOrOut;
+    }
+    #expand-collapse-button.expanded {
+        background-color: transparent;
+    }
+    #expand-collapse-button text {
+        display: block;
+        margin-top: -1px;
+        font-size: 12px;
+        font-weight: bold;
+        color: var(--brand);
+        
+    }
+    .links {
+        display: block;
+        margin-top: 15px;
+    }
+    .links > li {
+        display: block; 
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 80%;
+        text-align: center;
+        
+    }
+    .links > li > a {
+        display: block;
+        padding: 8px;
+        background-color: var(--secondary-black);
+        border-radius: 8px;
+        box-shadow: 0 0 5px .1px black;
+        font-size: 15px;
+        color: var(--white);
+    }
+    .links > li > a:active {
+        background-color: var(--secondary-white);
+    }
+    hr {
+        display: none;
+    }
+
+    @keyframes slideInOrOut {
+        0% {
+            height: 60px;
+        }
+        15% {
+            height: 80px;
+        }
+        100% {
+            height: 100%;
+        }
+    }
 }
-.links a:hover hr {
-    width: 100%;
+
+@media (min-width: 901px) {
+    .brand-name {
+        display: inline-block;
+        font-size: 50px;
+        margin-right: 50px;
+    }
+    #expand-collapse-button {
+        display: none;
+    }
+    .links {
+        display: inline-block;
+    }
+    .links li {
+        display: inline-block;
+        margin: 0px 10px;
+    }
+    .links > li > a {
+        font-size: 22px;
+    }
+    .links > li > a > hr {
+        border: none; outline: none;
+        margin: 0 auto;
+        height: 4px;
+        width: 0;
+        background-color: var(--brand);
+        transition: 1s;
+    }
+    .links > li > a:hover > hr {
+        width: 100%;
+    }
 }
