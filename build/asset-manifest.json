@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.c85b40fd.chunk.css",
-    "main.js": "./static/js/main.53cd5781.chunk.js",
-    "main.js.map": "./static/js/main.53cd5781.chunk.js.map",
+    "main.css": "./static/css/main.0750e325.chunk.css",
+    "main.js": "./static/js/main.ce3ff246.chunk.js",
+    "main.js.map": "./static/js/main.ce3ff246.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.bcac912d.js",
     "runtime-main.js.map": "./static/js/runtime-main.bcac912d.js.map",
     "static/js/2.48e1a148.chunk.js": "./static/js/2.48e1a148.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.47dab431.chunk.js": "./static/js/3.47dab431.chunk.js",
     "static/js/3.47dab431.chunk.js.map": "./static/js/3.47dab431.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.c85b40fd.chunk.css.map": "./static/css/main.c85b40fd.chunk.css.map",
+    "static/css/main.0750e325.chunk.css.map": "./static/css/main.0750e325.chunk.css.map",
     "static/js/2.48e1a148.chunk.js.LICENSE.txt": "./static/js/2.48e1a148.chunk.js.LICENSE.txt",
     "static/media/coffee-shop-0.25c2b747.jpg": "./static/media/coffee-shop-0.25c2b747.jpg",
     "static/media/coffee-shop-1.f5c28636.jpg": "./static/media/coffee-shop-1.f5c28636.jpg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.bcac912d.js",
     "static/js/2.48e1a148.chunk.js",
-    "static/css/main.c85b40fd.chunk.css",
-    "static/js/main.53cd5781.chunk.js"
+    "static/css/main.0750e325.chunk.css",
+    "static/js/main.ce3ff246.chunk.js"
   ]
 }

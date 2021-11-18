@@ -76,21 +76,6 @@
     transform: scale(1.1);
 }
 
-@keyframes hoverIn {
-    50% {
-        background: radial-gradient(
-            var(--secondary-black) 25%,
-            var(--primary-black)
-        );
-    }
-    100% {
-        background: radial-gradient(
-            var(--secondary-black) 75%,
-            var(--primary-black)
-        );
-    }
-}
-
 /* down arrow */
 .next-section-button > img {
     transform: rotate(90deg);
