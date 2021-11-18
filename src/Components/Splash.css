@@ -57,22 +57,40 @@
 .next-section-button {
     position: absolute;
     margin: 0 auto;
-    padding: 20px;
+    padding: 15px;
     bottom: 0;
     left: 0;
     right: 0;
     width: 80px;
-    background-color: var(--brand);
+    background: radial-gradient(
+        var(--tertiary-black),
+        var(--primary-black)
+    );
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
     box-shadow: 0 0 5px 1px var(--primary-black);
-    opacity: .8;
-    transition: .5s opacity;
     cursor: pointer;
+    transition: .5s transform;
 }
 .next-section-button:hover {
-    opacity: 1;
+    transform: scale(1.1);
 }
+
+@keyframes hoverIn {
+    50% {
+        background: radial-gradient(
+            var(--secondary-black) 25%,
+            var(--primary-black)
+        );
+    }
+    100% {
+        background: radial-gradient(
+            var(--secondary-black) 75%,
+            var(--primary-black)
+        );
+    }
+}
+
 /* down arrow */
 .next-section-button > img {
     transform: rotate(90deg);

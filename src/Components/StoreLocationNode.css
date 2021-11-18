@@ -29,9 +29,11 @@
     width: 100%;
 }
 .node > hr {
+    border: 0;
+    outline: 0;
     width: calc(100% + 30px);
     margin: 0 0 30px -15px;
-    height: 6px;
+    height: 8px;
     background: linear-gradient(to right, var(--brand), var(--light-brand), var(--brand));
 }
 /**/

@@ -18,7 +18,7 @@ function NavigationBar() {
 
     return (
         <div id="navigation-bar" className={navBarState}>
-            <Link to="/" className="brand-name">
+            <Link onClick={toggleNavBar} to="/" className="brand-name">
                 <text className="brand">Brand</text>
                 <text>Coffee</text>
             </Link>
