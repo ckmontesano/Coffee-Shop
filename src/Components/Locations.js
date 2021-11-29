@@ -1,6 +1,4 @@
 
-import { useState } from 'react';
-
 import StoreLocationNode from './StoreLocationNode.js';
 
 import location0 from '../Images/Locations/coffee-shop-0.jpg';
@@ -53,7 +51,7 @@ function Locations() {
         <div className="content-container">
             <div className="offset-for-navbar">
                 <h1>~ Locations ~</h1>
-                <h2>Come visit us, we'd love to see you! test</h2>
+                <h2>Come visit us, we'd love to see you!</h2>
                 <div>
                     <StoreLocationNode
                         id={0}

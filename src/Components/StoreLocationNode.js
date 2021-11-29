@@ -20,8 +20,6 @@ function StoreLocationNode(props) {
         hours = props.open + "-" + props.close;
     }
 
-    console.log(hours);
-
     return (
         <div className="node" id={idName}>
             <div className="photo">
