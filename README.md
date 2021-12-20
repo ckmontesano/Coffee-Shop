@@ -6,3 +6,6 @@ This is a small project I designed to showcase my front-end abilities. In the fu
 ![Desktop Landing Page](https://github.com/ckmontesano/Coffee-Shop/blob/master/Screenshots/Desktop/coffee-shop.png)
 #### Locations Page
 ![Desktop Locations Page](https://github.com/ckmontesano/Coffee-Shop/blob/master/Screenshots/Desktop/locations.png)
+
+## License
+MIT
